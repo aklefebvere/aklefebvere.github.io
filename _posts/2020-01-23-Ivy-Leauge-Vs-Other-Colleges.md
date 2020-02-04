@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Demo post
+title: Ivy Leauge vs. Other Colleges
 image: /img/avatar-icon.png
 ---
 
