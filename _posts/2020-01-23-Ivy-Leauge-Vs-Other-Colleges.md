@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ivy Leauge vs. Other Colleges
-image: /img/avatar-icon.png
+image: /img/ivy-league-emblems.jpg
 ---
 
 # This is where I will put my data project
