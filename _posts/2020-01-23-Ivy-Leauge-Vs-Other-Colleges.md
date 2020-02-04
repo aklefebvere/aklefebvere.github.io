@@ -4,11 +4,9 @@ title: Ivy Leauge vs. Other Colleges
 image: /img/avatar-icon.png
 ---
 
-# My Page
+# This is where I will put my data project
 
-## Goes Down Here
 
-# Here is a penguin
 
 ![Image of Penguin](https://pmcvariety.files.wordpress.com/2019/03/disneynature-penguins.jpg?w=1000&h=563&crop=1)
 
