@@ -35,4 +35,4 @@ With the graphs above, we can further prove that the Ivy League mean salaries is
 
 To further prove the significance of difference between Ivy Leauge Schools and the other schools in the United States, we can get the second and third highest mean salaries in the data and get the mean of the two and compare it to the Ivy League Salaries by plotting it on a graph.
 
-
+![](/img/Placeholder_ivy_eng_arts_mean_graph.png)
