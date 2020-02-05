@@ -39,14 +39,14 @@ avatar: "/img/avatar-icon.png"
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#C3073F"
-navbar-text-col: "#C5C6C7"
-navbar-children-col: "#F5F5F5"
+navbar-text-col: "#ffffff"
+navbar-children-col: "#ffffff"
 page-col: "#1A1A1D"
-link-col: "#C3073F"
+link-col: "#ffffff"
 hover-col: "#C3073F"
 footer-col: "#C3073F"
-footer-text-col: "#C5C6C7"
-footer-link-col: "#950740"
+footer-text-col: "#ffffff"
+footer-link-col: "#ffffff"
 # "#404040"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
@@ -88,7 +88,7 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
+  twitter: false
   facebook: false
   linkedin: false
 
