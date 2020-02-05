@@ -30,3 +30,9 @@ We can analyze how close the means between Ivy League and Engineering are by plo
 ![](/img/Placeholder_ivy_eng_midcareer25_Salary.png)
 
 With the graphs above, we can further prove that the Ivy League mean salaries is slightly higher by an insignificant amount compared to engineering colleges.
+
+# Ivy Leauge Salaries vs Engineering and Liberal Arts Salaries combined
+
+To further prove the significance of difference between Ivy Leauge Schools and the other schools in the United States, we can get the second and third highest mean salaries in the data and get the mean of the two and compare it to the Ivy League Salaries by plotting it on a graph.
+
+
