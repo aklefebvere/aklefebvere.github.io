@@ -5,9 +5,9 @@ image: /img/ivy-league-emblems.jpg
 ---
 # Introduction
 One of the first things high school students think about is what college to attend after high school. Some of the questions high school students ask are: 
-  * 1. Should I strive for excellent grades and perfect ACT/SAT scores to get into an Ivy Leauge school? 
-  * 2. Should I get pretty good grades and just go for a college in my state? 
-  * 3. Is there really a big difference in students salaries that graduate from a Ivy Leauge school compared to any other school? 
+  * Should I strive for excellent grades and perfect ACT/SAT scores to get into an Ivy Leauge school? 
+  * Should I get pretty good grades and just go for a college in my state? 
+  * Is there really a big difference in students salaries that graduate from a Ivy Leauge school compared to any other school? 
   
 This blog post answers these questions high school students have thought about. I will be analyzing and visualizing this [dataset](https://www.kaggle.com/wsj/college-salaries#salaries-by-college-type.csv) to compare the Ivy League salaries throughout a graduates career compared to other colleges in the United States. This blog does not take in account what career pathway a student would want to pursue, this blog is solely looking at just the money aspect of colleges.
 
