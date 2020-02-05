@@ -11,7 +11,7 @@ One of the first things high school students think about is what college to atte
   
 This blog post answers these questions high school students have thought about. I will be analyzing and visualizing this [dataset](https://www.kaggle.com/wsj/college-salaries#salaries-by-college-type.csv) to compare the Ivy League salaries throughout a graduates career compared to other colleges in the United States. This blog does not take in account what career pathway a student would want to pursue, this blog is solely looking at just the money aspect of colleges.
 
-![](https://i.gyazo.com/a209aec563a4ec64a9cc0b17b95e6ad9.png)
+![](https://i.gyazo.com/dbed9ef2308b17253df2898b6f9fa2f9.png)
 
 The image above shows the raw dataset I will be working with. This dataset consists of 269 schools all across the United States. Each school is categorized into five categories: Ivy Leauge, engineering, liberal arts, party (I'm not really sure how a school is considered a "party college"), and state. Each school contains the average mean salary throughout a graduates career (starting salary to mid-career 90 percentile). 
 
