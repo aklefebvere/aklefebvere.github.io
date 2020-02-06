@@ -24,7 +24,7 @@ The first thing I want to do is to compare the mean average salary for each sala
 
 The x-axis is each salary category and the percentages are the percentile of mid-career salaries (ex: 10% means the salary mean is higher than 10% of mid-career salaries but lower than 90% of salaries). By looking at the graph, you can tell that Ivy League schools have the highest mean salary for 5/6 of the salary categories. Engineering colleges are very close to Ivy League colleges from starting mean salary to mid-career 25 percentile then Ivy League schools shoot up in salary after the 25 percentile.
 
-We can analyze how close the means between Ivy League and Engineering are by plotting just the two categories in their own graphs.
+We can analyze how close the means between Ivy League and Engineering are by plotting the two categories in their own graphs.
 
 ![](/img/Placeholder_ivy_eng_starting_Salary.png)
 
