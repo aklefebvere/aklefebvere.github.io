@@ -10,7 +10,7 @@ One of the first things high school students think about is what college to atte
   * Should I get decent enough grades and just go for a good college in my state? 
   * Is there really a big difference in students salaries that graduate from a Ivy League school compared to any other school? 
   
-This blog post answers these questions high school students have thought about. I will be analyzing and visualizing this [dataset](https://www.kaggle.com/wsj/college-salaries#salaries-by-college-type.csv) to compare the Ivy League salaries throughout a graduates career compared to other colleges in the United States. Before analysing the data, I believe that there will not be a significant difference in Ivy League salaries compared to other colleges in the United States. This blog does not take in account what career pathway a student would want to pursue, this blog is solely looking at just the money aspect of colleges.
+This blog post answers these questions high school students have thought about. I will be analyzing and visualizing this [dataset](https://www.kaggle.com/wsj/college-salaries#salaries-by-college-type.csv) to compare the Ivy League salaries throughout a graduates career compared to other colleges in the United States. Before analysing the data, I believe that there will not be a significant difference in Ivy League salaries compared to other colleges in the United States. This blog does not take in account what career pathway a student would want to pursue. This blog only looks at the average monetary earning from individuals that graduated from a college.
 
 ![](https://i.gyazo.com/0a30944743f0f6dbddb0d32c42be1229.png)
 
@@ -18,11 +18,11 @@ The image above shows the raw dataset I will be working with. This dataset consi
 
 # Ivy League Salaries vs. other colleges Salaries
 
-The first thing I want to do is to compare the mean average salary for each salary category from each school type. I split the dataset into five different datasets that only have the data for each category of schools so I could find the mean of each salary category. I then created a grouped bar chart to visualize the mean for each salary category from each school type.
+The first thing I want to do is to compare the mean average salary for each salary category from each school type. I split the dataset into five different subsets that only have the data for each category of schools so I could find the mean of each salary category. I then created a grouped bar chart to visualize the mean for each salary category from each school type.
 
 ![](/img/FINAL_mean_graph.png)
 
-The x-axis is each salary category and the percentages are the percentile of mid-career salaries (ex: 10% means the salary mean is higher than 10% of mid-career salaries but lower than 90% of salaries). By looking at the graph, you can tell that Ivy League schools have the highest mean salary for 5/6 of the salary categories. Engineering colleges are very close to Ivy League colleges from starting mean salary to mid-career 25 percentile then Ivy League schools shoot up in salary after the 25 percentile.
+The x-axis is each salary category and the percentages are the percentile of mid-career salaries (ex: 10% means the salary mean is higher than 10% of mid-career salaries but lower than 90% of salaries). By looking at the graph, you can tell that Ivy League schools have the highest mean salary for five out of six of the salary categories. Engineering colleges are very close to Ivy League colleges from starting mean salary to mid-career 25 percentile then Ivy League schools shoot up in salary afterwards.
 
 We can analyze how close the means between Ivy League and Engineering are by plotting the two categories in their own graphs.
 
@@ -42,6 +42,6 @@ Even with combining two high mean salaries, Ivy League schools still come out on
 
 # Conclusion
 
-My hypothesis could be true and not true if you look at the analyzed data in two different perspectives. If you believe that each Ivy League graduate that gets a well paying job will eventually get to the 75th-90th percentile of salaries then yes, there is a significant difference in salaries compared to other colleges. If you believe that the majority of Ivy League graduates are going to stay around the mid-career salaries and maybe get lower than the average mid-career salaries then no, there is not a significant difference in salaries compared to other colleges. We can also think about what career pathway a graduate wants to pursue. This can completely change the outcome we have analyzed per career pathway. In conclusion, if you go to an Ivy League school and you work very hard to get lucky enough to get a very well paying job after you graduate, it is worth attending an Ivy League school.
+My hypothesis have been proven incorrect by the data we analyzed. By just looking at the data, there is a significant difference in Ivy League salaries compared to other colleges in the United States. The outcome of this data could change if we take account of what career pathway a graduate wants to pursue. In conclusion, if you go to an Ivy League school and you work very hard to get lucky enough to get a very well paying job after you graduate, it is worth attending an Ivy League school.
 
 [Colab Link](https://colab.research.google.com/drive/1F3poZJOL9j2h3coI-7PtGFpOBYosuOn7)
