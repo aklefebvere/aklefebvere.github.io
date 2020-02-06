@@ -38,7 +38,7 @@ To further prove the significance of difference between Ivy League Schools and t
 
 ![](/img/FINAL_ivy_eng_arts_mean_graph.png)
 
-Even with combining two high mean salaries, Ivy League schools still come out on top. If we calculate the pecentage increase for the 75th percentile and 90% percentile of salaries, we can see how significant the difference are. Ivy League 75th percentile has a 27% increase in salary and Ivy League 90th percentile has a 19% increase in salary when compared to Engineering colleges and Liberal Arts Colleges salaries combined.
+Even with combining two high mean salaries, Ivy League schools still come out on top. If we calculate the pecentage difference for the 75th percentile and 90% percentile of salaries, we can see how significant the difference are. Ivy League 75th percentile 32% difference in salary and Ivy League 90th percentile has a 38% difference in salary when compared to Engineering colleges and Liberal Arts Colleges salaries combined.
 
 # Conclusion
 
