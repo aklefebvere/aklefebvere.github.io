@@ -4,7 +4,7 @@ title: Ivy League vs. Other Colleges
 image: /img/ivy-league-emblems.jpg
 ---
 # Introduction
-One of the first things high school students think about is what college to attend after high school. Some of the questions high school students ask are: 
+One of the first things high school students think about is what college to attend. Some of the questions high school students ask are: 
   * Are my grades good enough to get into an Ivy League school?
   * Is it even worth going to an Ivy League School?
   * Should I get decent enough grades and just go for a good college in my state? 
