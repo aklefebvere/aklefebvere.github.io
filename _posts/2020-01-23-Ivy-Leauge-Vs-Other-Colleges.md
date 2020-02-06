@@ -42,7 +42,7 @@ Even with combining two high mean salaries, Ivy League schools still come out on
 
 # Conclusion
 
-My hypothesis have been proven incorrect by the data we analyzed. By just looking at the data, there is a significant difference in Ivy League salaries compared to other colleges in the United States. The outcome of this data could change if we take account of what career pathway a graduate wants to pursue. In conclusion, if you go to an Ivy League school and you work very hard to get lucky enough to get a very well paying job after you graduate, it is worth attending an Ivy League school.
+By the data we analyzed, there is not enough evidence here to support my hypothesis. By just looking at the data, there is a significant difference in Ivy League salaries compared to other colleges in the United States. The outcome of this data could change if we take account of what career pathway a graduate wants to pursue. In conclusion, if you go to an Ivy League school and you work very hard to get lucky enough to get a very well paying job after you graduate, it is worth attending an Ivy League school.
 
 [Colab Link](https://colab.research.google.com/drive/1F3poZJOL9j2h3coI-7PtGFpOBYosuOn7)
 
