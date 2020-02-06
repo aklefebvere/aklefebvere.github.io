@@ -43,3 +43,5 @@ Even with combining two high mean salaries, Ivy League schools still come out on
 # Conclusion
 
 My hypothesis could be true and not true if you look at the analyzed data in two different perspectives. If you believe that each Ivy League graduate that gets a well paying job will eventually get to the 75th-90th percentile of salaries then yes, there is a significant difference in salaries compared to other colleges. If you believe that the majority of Ivy League graduates are going to stay around the mid-career salaries and maybe get lower than the average mid-career salaries then no, there is not a significant difference in salaries compared to other colleges. We can also think about what career pathway a graduate wants to pursue. This can completely change the outcome we have analyzed per career pathway. In conclusion, if you go to an Ivy League school and you work very hard to get lucky enough to get a very well paying job after you graduate, it is worth attending an Ivy League school.
+
+[Colab Link](https://colab.research.google.com/drive/1F3poZJOL9j2h3coI-7PtGFpOBYosuOn7)
