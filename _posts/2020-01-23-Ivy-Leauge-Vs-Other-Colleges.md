@@ -7,7 +7,7 @@ image: /img/ivy-league-emblems.jpg
 One of the first things high school students think about is what college to attend after high school. Some of the questions high school students ask are: 
   * Are my grades good enough to get into an Ivy Leauge school?
   * Is it even worth going to an Ivy League School?
-  * Should I get pretty good grades and just go for a college in my state? 
+  * Should I get decent enough grades and just go for a college in my state? 
   * Is there really a big difference in students salaries that graduate from a Ivy Leauge school compared to any other school? 
   
 This blog post answers these questions high school students have thought about. I will be analyzing and visualizing this [dataset](https://www.kaggle.com/wsj/college-salaries#salaries-by-college-type.csv) to compare the Ivy League salaries throughout a graduates career compared to other colleges in the United States. Before analysing the data, I believe that there will not be a significant difference in Ivy League salaries compared to other colleges in the United States. This blog does not take in account what career pathway a student would want to pursue, this blog is solely looking at just the money aspect of colleges.
