@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Ivy Leauge vs. Other Colleges
+title: Ivy League vs. Other Colleges
 image: /img/ivy-league-emblems.jpg
 ---
 # Introduction
 One of the first things high school students think about is what college to attend after high school. Some of the questions high school students ask are: 
-  * Are my grades good enough to get into an Ivy Leauge school?
+  * Are my grades good enough to get into an Ivy League school?
   * Is it even worth going to an Ivy League School?
   * Should I get decent enough grades and just go for a good college in my state? 
-  * Is there really a big difference in students salaries that graduate from a Ivy Leauge school compared to any other school? 
+  * Is there really a big difference in students salaries that graduate from a Ivy League school compared to any other school? 
   
 This blog post answers these questions high school students have thought about. I will be analyzing and visualizing this [dataset](https://www.kaggle.com/wsj/college-salaries#salaries-by-college-type.csv) to compare the Ivy League salaries throughout a graduates career compared to other colleges in the United States. Before analysing the data, I believe that there will not be a significant difference in Ivy League salaries compared to other colleges in the United States. This blog does not take in account what career pathway a student would want to pursue, this blog is solely looking at just the money aspect of colleges.
 
 ![](https://i.gyazo.com/0a30944743f0f6dbddb0d32c42be1229.png)
 
-The image above shows the raw dataset I will be working with. This dataset consists of 269 schools all across the United States. Each school is categorized into five categories: Ivy Leauge, engineering, liberal arts, party (I'm not really sure how a school is considered a "party college"), and state. Each school contains the average mean salary throughout a graduates career (starting salary to mid-career 90 percentile). 
+The image above shows the raw dataset I will be working with. This dataset consists of 269 schools all across the United States. Each school is categorized into five categories: Ivy League, engineering, liberal arts, party (I'm not really sure how a school is considered a "party college"), and state. Each school contains the average mean salary throughout a graduates career (starting salary to mid-career 90 percentile). 
 
 # Ivy League Salaries vs. other colleges Salaries
 
@@ -32,13 +32,13 @@ We can analyze how close the means between Ivy League and Engineering are by plo
 
 With the graphs above, we can further prove that the Ivy League mean salaries is slightly higher by an insignificant amount compared to engineering colleges.
 
-# Ivy Leauge Salaries vs. Engineering and Liberal Arts Salaries Combined
+# Ivy League Salaries vs. Engineering and Liberal Arts Salaries Combined
 
-To further prove the significance of difference between Ivy Leauge Schools and the other schools in the United States, we can get the second and third highest mean salaries in the data and get the mean of the two and compare it to the Ivy League Salaries by plotting it on a graph.
+To further prove the significance of difference between Ivy League Schools and the other schools in the United States, we can get the second and third highest mean salaries in the data and get the mean of the two and compare it to the Ivy League Salaries by plotting it on a graph.
 
 ![](/img/Placeholder_ivy_eng_arts_mean_graph.png)
 
-Even with combining two high mean salaries, Ivy League schools still come out on top. If we calculate the pecentage increase for the 75th percentile and 90% percentile of salaries, we can see how significant the difference is. Ivy League 75th percentile has a 27% increase and Ivy Leauge 90th percentile has a 19% increase compared to Engineering colleges and Liberal Arts Colleges salaries combined.
+Even with combining two high mean salaries, Ivy League schools still come out on top. If we calculate the pecentage increase for the 75th percentile and 90% percentile of salaries, we can see how significant the difference is. Ivy League 75th percentile has a 27% increase and Ivy League 90th percentile has a 19% increase compared to Engineering colleges and Liberal Arts Colleges salaries combined.
 
 # Conclusion
 
