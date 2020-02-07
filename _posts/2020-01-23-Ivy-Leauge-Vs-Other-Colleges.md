@@ -3,7 +3,7 @@ layout: post
 title: Ivy League vs. Other Colleges
 subtitle: datascience blog #1
 image: /img/ivy-league-emblems.jpg
-bigimg: https://ctcl.org/wp-content/uploads/2019/01/TheCollegeSolution.image_-810x307.png
+bigimg: https://heyraahi.com/wp-content/uploads/2018/11/A2H-7.jpg
 ---
 # Introduction
 One of the first things high school students think about is what college to attend. Some of the questions high school students ask are: 
