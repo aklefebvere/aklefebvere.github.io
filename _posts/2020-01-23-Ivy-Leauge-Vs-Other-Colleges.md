@@ -36,7 +36,7 @@ With the graphs above, we can further prove that the Ivy League mean salaries is
 
 # Ivy League Salaries vs. Engineering and Liberal Arts Salaries Combined
 
-To further prove the significance of difference between Ivy League Schools and the other schools in the United States. To do this, we can get the second and third highest mean salaries in the data and get the mean of the two and compare it to the Ivy League Salaries. Once we get the means, we can plot it on a graph.
+To further prove the significant difference in Ivy League School salaries, We can compare Ivy League salaries to Engineering and Liberal Arts salaries. To do this, we can get the second and third highest mean salaries in the data and get the mean of the two and compare it to the Ivy League Salaries. Once we get the means, we can plot it on a graph.
 
 ![](/img/FINAL_ivy_eng_arts_mean_graph.png)
 
