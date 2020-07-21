@@ -46,7 +46,7 @@ link-col: "#C3073F"
 hover-col: "#ffffff"
 footer-col: "#C3073F"
 footer-text-col: "#ffffff"
-footer-link-col: "#ffffff"
+footer-link-col: "#404040"
 # "#404040"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
@@ -71,7 +71,7 @@ social-network-links:
   rss: true
   email: "aklefebvere@gmail.com"
 #  facebook: deanattali
-  github: "https://github.com/aklefebvere"
+  github: "aklefebvere"
 #  twitter: daattali
 #  reddit: yourname
 #  linkedin: daattali
