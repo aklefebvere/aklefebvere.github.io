@@ -6,4 +6,4 @@ subtitle: datascience blog #3
 
 # test
 
-![](img/KNN_graph_2.png)
+![](/img/KNN_graph_2.png)
