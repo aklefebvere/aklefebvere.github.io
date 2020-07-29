@@ -178,7 +178,7 @@ acc = accuracy_score(y_test, y_pred)
 
 print(f"By hand accuracy: {acc}")
 
-Output: By hand accuracy: 0.86
+# Output: By hand accuracy: 0.86
 ```
 When comparing our predictions to the actual classes of the test data, our model predicted 86% of the classes correctly. Now that we know that our model is working, how does it compare to a sklearn K-nearest neighbor model? We can test this by running the same datasets we created above through a sklearn model.
 ```python
@@ -188,7 +188,7 @@ neigh.fit(X_train, y_train)
 sklearn_pred = neigh.predict(X_test)
 print(f"Sklearn model accuracy: {accuracy_score(y_test, sklearn_pred)}")
 
-Output: Sklearn model accuracy: 0.86
+# Output: Sklearn model accuracy: 0.86
 ```
 Since the accuracy scores of both by hand and sklearn models are the same, we can say that our model we created works very similarly or if not the same as the sklearn model. Now that we know what a K-nearest neighbor model is and how to create it, what are some other use cases for K-NN?
 
