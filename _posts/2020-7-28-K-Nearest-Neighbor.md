@@ -1,6 +1,7 @@
 ---
 layout: post
 title: K-Nearest Neighbor For Dummies
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/KnnClassification.svg/1920px-KnnClassification.svg.png
 subtitle: Data Science Blog #3
 ---
 
