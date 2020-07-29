@@ -103,6 +103,7 @@ class K_NN:
     def predict(self, pred):
         # empty list to hold each prediction
         predictions = []
+        # iterates through each test row
         for p in pred:
             # empty list to hold distances for a specific test row
             distances = []
@@ -127,3 +128,72 @@ class K_NN:
         return predictions
 ```
 Congratulations! You have coded your very own K-nearest neighbor model! Now that this is complete, we can test it out with actual data.
+
+# Testing the K-NN Class
+To test the class we created, we will use a dataset from UCI that contains data that tells us if a patient has heart disease or does not. This is what the data looks like. 0 Means that the patient has heart disease and 1 does not.
+```python
+     age  sex  cp  trestbps  chol  fbs  restecg  thalach  exang  oldpeak  slope  ca  thal  target
+0     63    1   3       145   233    1        0      150      0      2.3      0   0     1       1
+1     37    1   2       130   250    0        1      187      0      3.5      0   0     2       1
+2     41    0   1       130   204    0        0      172      0      1.4      2   0     2       1
+3     56    1   1       120   236    0        1      178      0      0.8      2   0     2       1
+4     57    0   0       120   354    0        1      163      1      0.6      2   0     2       1
+```
+First, we will import the dataset csv into our python module and identify our features (x) and our target (y).
+```python
+df = pd.read_csv("heart.csv")
+
+x = np.array(df.drop(columns=['target']))
+y = np.array(df['target'])
+```
+Next, we will split our data into training and testing datasets. We will train our model off the training dataset and test our model with our testing dataset. We will then standardize our X_train and X_test to get all of our features on the same scale.
+```python
+X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.33, random_state=42)
+
+scaler = StandardScaler()
+
+X_train = scaler.fit_transform(X_train)
+
+X_test = scaler.transform(X_test)
+```
+Now that our data is ready for the model, we can now utilize the class we made. First thing is to instantiate the object with the class we created with the K value we want. For this example, I chose the k value 7
+```python
+model = K_NN(K=7)
+```
+Once our model has been created, we can then fit our training data to the class object and run a prediction off the test data we created above.
+```python
+model.fit(X_train, y_train)
+
+y_pred = model.predict(X_test)
+```
+We can print out y_pred to see all of our predicted classes.
+```python
+print(y_pred)
+
+output: [0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0]
+```
+For each row/vector of the test data, we got a predicted class. With the predictions, we can now test how accurate our model was by comparing the y_pred variable to the actual labels from y_test.
+```python
+acc = accuracy_score(y_test, y_pred)
+
+print(f"By hand accuracy: {acc}")
+
+Output: By hand accuracy: 0.86
+```
+When comparing our predictions to the actual classes of the test data, our model predicted 86% of the classes correctly. Now that we know that our model is working, how does it compare to a sklearn K-nearest neighbor model? We can test this by running the same datasets we created above through a sklearn model.
+```python
+from sklearn.neighbors import KNeighborsClassifier
+neigh = KNeighborsClassifier(n_neighbors=7)
+neigh.fit(X_train, y_train)
+sklearn_pred = neigh.predict(X_test)
+print(f"Sklearn model accuracy: {accuracy_score(y_test, sklearn_pred)}")
+
+Output: Sklearn model accuracy: 0.86
+```
+Since the accuracy scores of both by hand and sklearn models are the same, we can say that our model we created works very similarly or if not the same as the sklearn model. Now that we know what a K-nearest neighbor model is and how to create it, what are some other use cases for K-NN?
+
+# What are the use cases for a K-nearest neighbor model?
+K-nearest neighbor is used mostly for classification data. It is able to classify new data by giving it labled data like what we have done above. K-nearest neighbor is one of the quickest algorithms to classify data. One of the best uses for the K-nearest neighbor model is for a recommendation system. For example, say you were on spotify and you wanted songs similar to what you have listened to in the past. With a K-nearest neighbor model, you can plug in all spotify songs into a K-nn model and then predict what songs are similar to what you have listend to by giving the model your previously listened songs. One of my past projects was actually a spotfiy song suggester that used a K-nearest neighbor model. You can find that project here[insert hyper link of project here].
+
+# Conclusion
+By reading this blog, you have learned what a K-nearest neighbor model is, how the algorithm works, how to execute a K-nearest neighbor algorithm from scratch, and use cases of a K-nearest neighbor model. K-nearest neighbor is one of the most fundamental machine learning algorithms a data scientist can learn. It can classify just about any sort of labeled data in a very quick manner. K-nearest neighbor is just scratching the surface of the machine learning world, keep diving into the world of machine learning, perhaps machine learning could become your focus in the future.
