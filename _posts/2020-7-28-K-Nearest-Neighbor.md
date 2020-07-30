@@ -2,7 +2,7 @@
 layout: post
 title: K-Nearest Neighbors For Dummies
 image: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/KnnClassification.svg/1920px-KnnClassification.svg.png
-subtitle: Data Science Blog #3
+subtitle: K-NN from scratch
 ---
 [Code Repo](https://github.com/aklefebvere/CS-Build-Week-1-DS)
 
@@ -22,7 +22,7 @@ K-NN is a machine learning algorithm used most of the time for classifying new d
 One of the best uses for the K-NN model is for a recommendation system. A recommendation system I wrote in the past uses a K-NN model by using Spotify data to recommend similar songs that a user have listened to in the past. This was possible because every song in Spotify has attributes and I used those attributes to create a K-NN model. When a user plugs in a song into the suggester, it finds the song's attributes and plugs it into the K-NN model and it finds the top five Spotify songs that had similar attriubtes to the plugged in song. You can find that project [here](https://front-end-livid.now.sh/dashboard). Now we know what is K-NN is and when to use it, how does it work?
 
 # How does the algorithm work?
-K-NN works by getting the euclidian distance from a test point to the k closest points to the test point. K-NN specifies how many neighbors to pick by using the letter k and k is defined by the user of the model. 
+K-NN works by getting the euclidian distance from a test point to the k closest points to the test point. Euclidian distance is the distance from one point to another point in metric space. K-NN specifies how many neighbors to pick by using the letter k and k is defined by the user of the model. 
 
 ![test](/img/KNN_graph_final.png)
 
