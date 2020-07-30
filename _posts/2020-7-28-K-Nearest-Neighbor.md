@@ -1,29 +1,30 @@
 ---
 layout: post
-title: K-Nearest Neighbor For Dummies
+title: K-Nearest Neighbors For Dummies
 image: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/KnnClassification.svg/1920px-KnnClassification.svg.png
 subtitle: Data Science Blog #3
 ---
 
 # Introduction
-One of the best algorithms to start with when beginning to learn about machine learning is the K-nearest neighbor algorithm or K-NN. K-nearest neighbor is considered by many people the simplest algorithms someone can learn. In this blog, I will be discussing the following questions:
-  * What is K-nearest neighbor?
+One of the best algorithms to start with when beginning to learn about machine learning is the K-nearest neighbors algorithm or K-NN. K-nearest neighbors is considered by many people the simplest algorithms someone can learn. In this blog, I will be discussing the following questions:
+  * What is K-nearest neighbors?
   * How does it work?
-  * How do I create a K-nearest neighbor model?
-  * What are the use cases for a K-nearest neighbor model?
+  * How do I create a K-nearest neighbors model?
+  * What are the use cases for a K-nearest neighbors model?
 
-By the end of the day, you should be able to answer to yourself all these questions and even hopefully code your very own K-nearest neighbor model.
+By the end of the day, you should be able to answer to yourself all these questions and even hopefully code your very own K-nearest neighbors model.
 
-# What is K-nearest neighbor?
-K-nearest neighbor is a machine learning algorithm used most of the time for classifying new data. K-NN is good at classifying new data because it is a supervised machine learning algorithm which means that it requires labeling for each row of data. When training data is passed into a K-NN model, the training data does not get modified, it's simply stored into the model for it to be used for predictions. Now we know what is K-nearest neighbor is, how does it work?
+# What is K-nearest neighbors?
+K-nearest neighbors is a machine learning algorithm used most of the time for classifying new data. K-NN is good at classifying new data because it is a supervised machine learning algorithm which means it requires labeling for each row of data. When training data is passed into a K-NN model, the training data does not get modified, it's simply stored into the model for it to be used for predictions. Now we know what is K-nearest neighbors is, how does it work?
 
 # How does the algorithm work?
+K-nearest neighbors works by getting the euclidian distance from a test point to the k closest points to the test point. K-NN specifies how many neighbors to pick by using the letter k and k is defined by the user of the model. 
 
 ![test](/img/KNN_graph_2.png)
 
-K-nearest neighbor works by getting the euclidian distance from a test point to the k closest points to the test point. K-NN specifies how many neighbors to pick by using the letter k and k is defined by the user of the model. In the data visualization above, the red point is a data point from the test dataset and since k is set to five, it will get the five closest points to the test point which is what the red lines are pointing to. Once the k closest points have been identified and selected, a voting process starts to determine what class to identify the test point. Since all the points that were selected were from the Iris-setosa class, the red test point predicted class is the Iris-setosa class. If for example, there was three Iris-setosa points and two Iris-virginica points, the predicted class would be Iris-setosa. Iris-setosa was the predicted class because there was more points selected for Iris-setosa then there was for Iris-virginica which is all determined by the algorithm's voting process. To prevent having ties in the voting process (ex: k=2, 1 Iris-setosa, 1 Iris-virginica), it is best practice to pick an odd number for k so that there cannot be a tie in the classes selected. Now that we know what K-nearest neighbor is and how the algorithm works, we can now begin coding the model from scratch.
+In the data visualization above, the red point is a data point from the test dataset and since k is set to five, it will get the five closest points to the test point which is what the red lines are pointing to. Once the k closest points have been identified and selected, a voting process starts to determine what class to identify the test point. Since all the points that were selected were from the Iris-setosa class, the red test point predicted class is the Iris-setosa class. If for example, there was three Iris-setosa points and two Iris-virginica points, the predicted class would be Iris-setosa. Iris-setosa was the predicted class because there was more points selected for Iris-setosa then there was for Iris-virginica which is all determined by the algorithm's voting process. To prevent having ties in the voting process (ex: k=2, 1 Iris-setosa, 1 Iris-virginica), it is best practice to pick an odd number for k so that there cannot be a tie in the classes selected. Now that we know what K-nearest neighbors is and how the algorithm works, we can now begin coding the model from scratch.
 
-# How do I create a K-nearest neighbor model?
+# How do I create a K-nearest neighbors model?
 Before we start coding, lets plan out what we need to code:
   * A class to hold our built K-NN model
     * two variables two hold our X_train and y_train
@@ -83,7 +84,7 @@ return predictions
 ```
 ```max(set(predict), key= predict.count)``` will get the class that occured the most in the list and then that will get appended into the preditions list. If more than one test vector was passed in at once, it will go back up to the ```for p in pred``` for loop and do everything again until there is no more test vectors to iterate. Once everything is finished, it will return the predicted classes for every test vector the user plugged into the class object.
 
-Now that we have all of our pieces of the class completed, we can now put all of this into one big class and create the complete K-nearest neighbor class. I will add comments for each line to briefly describe what I explained above.
+Now that we have all of our pieces of the class completed, we can now put all of this into one big class and create the complete K-nearest neighbors class. I will add comments for each line to briefly describe what I explained above.
 ```python
 import numpy as np
 
@@ -127,7 +128,7 @@ class K_NN:
 
         return predictions
 ```
-Congratulations! You have coded your very own K-nearest neighbor model! Now that this is complete, we can test it out with actual data.
+Congratulations! You have coded your very own K-nearest neighbors model! Now that this is complete, we can test it out with actual data.
 
 # Testing the K-NN Class
 To test the class we created, we will use a dataset from UCI that contains data that tells us if a patient has heart disease or does not. This is what the data looks like. 0 Means that the patient has heart disease and 1 does not.
@@ -180,7 +181,7 @@ print(f"By hand accuracy: {acc}")
 
 # Output: By hand accuracy: 0.86
 ```
-When comparing our predictions to the actual classes of the test data, our model predicted 86% of the classes correctly. Now that we know that our model is working, how does it compare to a sklearn K-nearest neighbor model? We can test this by running the same datasets we created above through a sklearn model.
+When comparing our predictions to the actual classes of the test data, our model predicted 86% of the classes correctly. Now that we know that our model is working, how does it compare to a sklearn K-nearest neighbors model? We can test this by running the same datasets we created above through a sklearn model.
 ```python
 from sklearn.neighbors import KNeighborsClassifier
 neigh = KNeighborsClassifier(n_neighbors=7)
@@ -190,10 +191,10 @@ print(f"Sklearn model accuracy: {accuracy_score(y_test, sklearn_pred)}")
 
 # Output: Sklearn model accuracy: 0.86
 ```
-Since the accuracy scores of both by hand and sklearn models are the same, we can say that our model we created works very similarly or if not the same as the sklearn model. Now that we know what a K-nearest neighbor model is and how to create it, what are some other use cases for K-NN?
+Since the accuracy scores of both by hand and sklearn models are the same, we can say that our model we created works very similarly or if not the same as the sklearn model. Now that we know what a K-nearest neighbors model is and how to create it, what are some other use cases for K-NN?
 
-# What are the use cases for a K-nearest neighbor model?
-K-nearest neighbor is used mostly for classification cases. It is able to classify new data by providing it labled data like what we have done above. K-nearest neighbor is one of the quickest algorithms to classify data. One of the best uses for the K-nearest neighbor model is for a recommendation system. For example, say you were using spotify and you wanted songs similar to what you have listened to in the past. With a K-nearest neighbor model, you can plug in all spotify songs (using some sort of spotify songs dataset with song attributes) into a K-nn model and then predict what songs are similar to what you have listened to by giving the model your previously listened songs attributes. One of my past projects was actually a spotfiy song suggester that used a K-nearest neighbor model. You can find that project [here](https://front-end-livid.now.sh/dashboard).
+# What are the use cases for a K-nearest neighbors model?
+K-nearest neighbors is used mostly for classification cases. It is able to classify new data by providing it labled data like what we have done above. K-nearest neighbors is one of the quickest algorithms to classify data. One of the best uses for the K-nearest neighbors model is for a recommendation system. For example, say you were using spotify and you wanted songs similar to what you have listened to in the past. With a K-nearest neighbors model, you can plug in all spotify songs (using some sort of spotify songs dataset with song attributes) into a K-nn model and then predict what songs are similar to what you have listened to by giving the model your previously listened songs attributes. One of my past projects was actually a spotfiy song suggester that used a K-nearest neighbors model. You can find that project [here](https://front-end-livid.now.sh/dashboard).
 
 # Conclusion
-By reading this blog, you have learned what is K-nearest neighbor, how the algorithm works, how to execute a K-nearest neighbor algorithm from scratch, and the use cases of a K-nearest neighbor model. K-nearest neighbor is one of the most fundamental machine learning algorithms a data scientist can learn. It can classify just about any sort of labeled data in a very quick manner. K-nearest neighbor is just scratching the surface of the machine learning world, keep diving into the world of machine learning, perhaps machine learning could become your focus in the future.
+By reading this blog, you have learned what is K-nearest neighbors, how the algorithm works, how to execute a K-nearest neighbors algorithm from scratch, and the use cases of a K-nearest neighbors model. K-nearest neighbors is one of the most fundamental machine learning algorithms a data scientist can learn. It can classify just about any sort of labeled data in a very quick manner. K-nearest neighbors is just scratching the surface of the machine learning world, keep diving into the world of machine learning, perhaps machine learning could become your focus in the future.
