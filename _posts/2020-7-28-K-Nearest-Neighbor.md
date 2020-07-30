@@ -132,7 +132,7 @@ Congratulations! You have coded your very own K-nearest neighbors model! Now tha
 
 # Testing the K-NN Class
 To test the class we created, we will use a dataset from [UCI](https://archive.ics.uci.edu/ml/datasets/Heart+Disease) that contains data that tells us if a patient has heart disease or does not. This is what the data looks like. 0 means that the patient has heart disease and 1 does not.
-![data](https://i.gyazo.com/17ba8842f78767c496a78b98105d289e.png)
+![data](/img/heart_data.png)
 
 First, we will import the dataset csv into our python module and identify our features (x) and our target (y).
 ```python
