@@ -131,7 +131,7 @@ class K_NN:
 Congratulations! You have coded your very own K-nearest neighbors model! Now that this is complete, we can test it out with actual data.
 
 # Testing the K-NN Class
-To test the class we created, we will use a dataset from UCI that contains data that tells us if a patient has heart disease or does not. This is what the data looks like. 0 Means that the patient has heart disease and 1 does not.
+To test the class we created, we will use a dataset from [UCI](https://archive.ics.uci.edu/ml/datasets/Heart+Disease) that contains data that tells us if a patient has heart disease or does not. This is what the data looks like. 0 means that the patient has heart disease and 1 does not.
 ```python
      age  sex  cp  trestbps  chol  fbs  restecg  thalach  exang  oldpeak  slope  ca  thal  target
 0     63    1   3       145   233    1        0      150      0      2.3      0   0     1       1
@@ -194,7 +194,10 @@ print(f"Sklearn model accuracy: {accuracy_score(y_test, sklearn_pred)}")
 Since the accuracy scores of both by hand and sklearn models are the same, we can say that our model we created works very similarly or if not the same as the sklearn model. Now that we know what a K-nearest neighbors model is and how to create it, what are some other use cases for K-NN?
 
 # What are the use cases for a K-nearest neighbors model?
+![recommmend](/img/recommend.png)
 K-nearest neighbors is used mostly for classification cases. It is able to classify new data by providing it labled data like what we have done above. K-nearest neighbors is one of the quickest algorithms to classify data. One of the best uses for the K-nearest neighbors model is for a recommendation system. For example, say you were using spotify and you wanted songs similar to what you have listened to in the past. With a K-nearest neighbors model, you can plug in all spotify songs (using some sort of spotify songs dataset with song attributes) into a K-nn model and then predict what songs are similar to what you have listened to by giving the model your previously listened songs attributes. One of my past projects was actually a spotfiy song suggester that used a K-nearest neighbors model. You can find that project [here](https://front-end-livid.now.sh/dashboard).
 
 # Conclusion
 By reading this blog, you have learned what is K-nearest neighbors, how the algorithm works, how to execute a K-nearest neighbors algorithm from scratch, and the use cases of a K-nearest neighbors model. K-nearest neighbors is one of the most fundamental machine learning algorithms a data scientist can learn. It can classify just about any sort of labeled data in a very quick manner. K-nearest neighbors is just scratching the surface of the machine learning world, keep diving into the world of machine learning, perhaps machine learning could become your focus in the future.
+
+[Code Repo](https://github.com/aklefebvere/CS-Build-Week-1-DS)
