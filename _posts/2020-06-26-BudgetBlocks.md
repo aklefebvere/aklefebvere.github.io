@@ -1,8 +1,8 @@
 ---
 layout: post
 title: BudgetBlocks budgeting app
+image: /img/app_icon.svg
 subtitle: A DS API that autocategorizes transactions and more!
-img: /img/app_icon.svg
 ---
 
 Over the course of 8 weeks, I worked with a cross-functional team consisting of: web developers, an iOS developer, a UI/UX designer, and another data scientist to create a budgeting app called BudgetBlocks.
