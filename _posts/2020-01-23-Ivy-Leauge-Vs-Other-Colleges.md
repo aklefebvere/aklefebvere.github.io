@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ivy League vs. Other Colleges
-subtitle: datascience blog #1
+subtitle: data science blog
 image: /img/ivy-league-emblems.jpg
 bigimg: https://heyraahi.com/wp-content/uploads/2018/11/A2H-7.jpg
 ---
