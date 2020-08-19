@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ivy League vs. Other Colleges
-subtitle: Data Science Blog
+subtitle: Analysing and visualizing universitys using pandas and matplotlib
 image: /img/ivy-league-emblems.jpg
 bigimg: https://heyraahi.com/wp-content/uploads/2018/11/A2H-7.jpg
 ---
