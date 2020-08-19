@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Predict Car Prices In India
-subtitle: datascience blog #2
+image: /img/car.png
+subtitle: data science blog
 ---
 
 # Build a car and find its predicted price!
@@ -13,5 +14,5 @@ subtitle: datascience blog #2
 🏎️ Predictive prices are predicted with a random forest regression model that is built with an r^2 of above 90%. With this high of an r^2, the price will be very close to what the car would actually cost.
 
 
-## Link To Heroku App
-https://pacific-cove-84332.herokuapp.com/
+[Heroku App](https://pacific-cove-84332.herokuapp.com/)
+[Github Repo](https://github.com/aklefebvere/unit2-Build)
