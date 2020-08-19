@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About me
-subtitle: WIP
 ---
 
 Hi! My name is Adriann and welcome to my portfolio website! I am currently a student at Lambda School enrolled in the data science track. Over the past couple months at my time at Lamda School, I have have learned a multiude of data science skills such as:
