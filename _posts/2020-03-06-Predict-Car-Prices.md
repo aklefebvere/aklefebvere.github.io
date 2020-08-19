@@ -2,7 +2,7 @@
 layout: post
 title: Predict Car Prices In India
 image: /img/car.png
-subtitle: Data Science Blog
+subtitle: Predicting car prices using machine learning
 ---
 
 # Build a car and find its predicted price!
